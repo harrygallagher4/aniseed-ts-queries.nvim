@@ -1,8 +1,9 @@
 ((list .
    (symbol) @_defn .
    (symbol) @definition.function .
-   (sequential_table))
- (#any-of? @_defn "defn" "defn-"))
+   (sequential_table)) @scope
+ (#any-of? @_defn "defn" "defn-")
+ (#set! definition.function.scope "parent"))
 
 ((list .
    (symbol) @_def .
